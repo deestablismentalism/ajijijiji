@@ -7,22 +7,24 @@
 .header {
     display: grid;
     grid-template-columns: 15% 35% 50%;
-    background-color: #e4bf50;
+    background-color: #F0DE36;
     padding-top: 5px;
 }
 a:is(:link, :active, :visited).active {
-    background-color: #2c5398;
+    color: #2c5398;
     padding: 10px;
-    border: 2px solid white;
+    text-decoration: underline;
     border-radius: 3px;
+    text-shadow: none;
+    font-weight: bold;
 }
 .photoContainer2 {
     padding: 5px 10px;
     width: 220px;
 }
 .h2Container {
-    padding: 20px 10px;
-    font-size: 30px;
+    padding: 25px 5px;
+    font-size: 32px;
     color: white;
     text-align: left;
     text-shadow: 2px 2px 5px black;
@@ -36,7 +38,7 @@ a:is(:link, :active, :visited).active {
 .hyperLink {
     display: flex;
     padding: 10px;
-    background-color: #e4bf50;
+    background-color: #F0DE36;
     color: white;
     font-size: 20px;
     justify-content: right;
@@ -50,9 +52,11 @@ a:is(:link, :active, :visited).active {
     cursor: pointer;
 }
 .navList li {
-    font-size: 20px;
-    font-family: Verdana, Tahoma, sans-serif;
-}
+    font-size: 26px;
+    font-family: 'Times New Roman';
+    text-shadow: 1px 1px 3px black;
+    
+}                                                                                                                                                                                          
 .navContainer {
     display: grid;
     grid-template-columns: 85% 15%;
