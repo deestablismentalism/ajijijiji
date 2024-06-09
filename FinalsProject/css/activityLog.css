@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    background-color: rgba(149, 146, 146, 0.7);
+    background-color: #EEEEEE;
     margin: 20px;
     border-radius: 20px;
 }
 .topContainer {
     display: flex;
     width: 100%;
+    height: 60px;
     justify-content: space-between;
 }
 .topButton {
@@ -16,31 +17,32 @@
     text-align: right; 
 }
 .topButton button {
-    padding: 5px 20px;
+    padding: 10px 20px;
     border: 1px solid #000;
     border-radius: 5px;
-    background-color: #e4bf50;
+    background-color: #F0DE36;
     color: #fff;
     cursor: pointer;
+    margin-top: 10px;
 }
 .actH1 {
-    margin: 10px 40px;
-    font-size: 25px;
+    margin: 25px 30px;
+    font-size: 30px;
     color: #2c5398;
 }
 .actTableContainer {
     display: block;  
     align-content: flex-start;
     flex-wrap: wrap;
-    margin: 20px;
-    background-color: rgba(149, 146, 146, 0.7);
+    margin: 20px 10px;
+    background-color: #EEEEEE;
     border-radius: 20px;
     height: 480px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 .borrowedTable .bItemsTable {
-    margin: 20px;
+    margin: 15px;
     width: 98%;
     table-layout: fixed;
     box-sizing: border-box;
@@ -52,6 +54,7 @@
     font-weight: bold;
     font-size: 20px; 
     color: #fff;
+    text-align: center;
 }
 .bItemsTable td {
     border: 2px solid #cfb9b9;
@@ -62,17 +65,105 @@
     font-size: 15px;
 } 
 .bottomButton {
-    margin: 10px;
-    padding: 20px;
     position: absolute;
     bottom: 20px;
     right: 20px;
 }
-.bottomButton a{
+
+.bottomButton a {
     padding: 5px 20px;
     border: 1px solid #000;
     border-radius: 5px;
     background-color: #2c5398;
     color: #fff;
     cursor: pointer;
+    text-decoration: none; 
+    margin-right: 10px; 
+}
+.bottomButton button{
+    padding: 5px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #2c5398;
+    color: #fff;
+    cursor: pointer;
+}
+
+h2 {
+    color: #2c5398;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.overlay-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; 
+}
+
+.overlay-container.show {
+    display: flex;
+}
+
+.popup-box {
+    background-color: #fff;
+    width: 50%; 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 50vh; 
+    overflow-y: auto; 
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-input {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c5398;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-close-popup {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: auto;
+    display: block;
 }
