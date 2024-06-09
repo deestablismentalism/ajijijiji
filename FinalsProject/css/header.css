@@ -1,0 +1,107 @@
+/*header part*/
+.header img {
+    width: 180px;
+    height:80px;
+}
+/*header container*/
+.header {
+    display: grid;
+    grid-template-columns: 15% 35% 50%;
+    background-color: #e4bf50;
+    padding-top: 5px;
+}
+a:is(:link, :active, :visited).active {
+    background-color: #2c5398;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+.photoContainer2 {
+    padding: 5px 10px;
+    width: 220px;
+}
+.h2Container {
+    padding: 20px 10px;
+    font-size: 30px;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px 5px black;
+}
+.header input {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+/*a hyperlinks area*/
+.hyperLink {
+    display: flex;
+    padding: 10px;
+    background-color: #e4bf50;
+    color: white;
+    font-size: 20px;
+    justify-content: right;
+}
+.navList{
+    display: flex;
+    margin: 20px;
+}
+.navLink {
+    padding: 20px 10px;
+    cursor: pointer;
+}
+.navList li {
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.navContainer {
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.accountDropDown {
+   padding: 10px 10px; 
+   display: inline-block;
+}
+.pictureContainer {
+    padding: 5px;
+}
+/*account picture*/
+.pictureContainer img {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #2c5398;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dropDownContainer {
+    display: flex;
+    position: absolute;
+    right: 0;
+    background-color: #2c5498dd;
+    border: 2px black;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    display: none;
+}
+.dropDownContainer.pressed {
+    display: block;
+}
+.dropDownList .list {
+    font-size: 18px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: white;
+}
+.dropDownList .list:hover {
+    background-color: #1e3d77;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*username design*/
+.username {
+    font-size: 18px;
+    color: #e4bf50;
+    text-decoration: underline;
+
+}
+
+

@@ -1,0 +1,31 @@
+/*body image*/
+.photoContainer img {
+    width: 500px;
+    height: 300px;
+}
+.tableContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 20px;
+    color: #2c5398;   
+}
+.tableContainer p {
+    margin-top:10px;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.activityTable th {
+    border: 2px solid #cfb9b9;
+    padding: 5px 20px;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.recentlyTable th {
+    border: 2px solid #cfb9b9;
+    padding: 5px 20px;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    font-size: 20px;
+}

@@ -1,0 +1,83 @@
+body {
+    margin: 50px;
+    background-image: url("photo/backGround.png");
+    background-size: cover;
+}
+/*whole content container*/
+.pageContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/*inventory monitoring system & border*/
+.headerContainer {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;
+    border: 1px solid blue;
+    background-color: rgba(0,13,255, 0.6);
+    border-radius: 20px;
+    padding: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+/*photo up to form container*/
+.formContainer {
+    padding: 20px;
+}
+/* kitchen inventory text*/
+.formHeader h1 {
+    font-size: 25px;
+    color: white;
+    font-family: Arial;
+}
+/*formheader paragraph*/
+.output {
+    padding-top: 15px;
+    display: grid;
+    background-color: rgba(238, 92, 92, 0.8);
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-family: Arial;
+}
+/*button*/
+.buttonContainer button {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    background-color: blue; 
+    border-radius: 20px;
+    width: 500px;
+    height: 40px;
+}
+/*form textfield*/
+.formBody input {
+    width: 500px;
+    height: 40px;
+    background-color: white;
+    border-color: black;
+    border-radius: 20px;
+}
+/*whole form*/
+.formBody  {
+    font-size: 25px;
+    color: white;
+}
+/*label*/
+.showPass {
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: underline;
+    font-size: 18px;
+    color: rgb(59, 59, 59);
+}
+/*checkbox*/
+.showPass input {
+    width: 20px;
+    height: 15px;
+}
