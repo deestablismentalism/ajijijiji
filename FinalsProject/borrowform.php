@@ -6,61 +6,43 @@
 
 <!DOCTYPE html>
 
- <html>
-<head>
-    <title>Borrow Form</title>
-</head>
-<body>
+    <html>
+    <head>
+        <title>Borrow Form</title>
+    </head>
+    <body>
 
-    <div>
-        <form action="includes/borrowHandler.inc.php" method="post">
-            
-            <label for="fname"><b> Teacher Name:</b></label>
-            <br>
-            <input type="text" id="fname" name="fname" placeholder="First Name">
-            <input type="text" id="mname" name="mname" placeholder="Middle Name">
-            <input type="text" id="lname" name="lname" placeholder="Last Name">
-            <input type="text" id="sname" name="sname" placeholder="Suffix (Optional)">
-            <br>
-            <label for="SCourse"><b>Section and Course:</b></label>
-            <br>
-            <input type="text" id="Sname" name="section" placeholder="Section">
-            <input type="text" id="Course" name="course" placeholder="Course">
-            <br>
-            <label for="items"><b>Items to be Borrow:</b></label>
-            <div class="dropdown">
-                <select name="items">
-                    <?php displayItems() ?>
-                </select>
-            </div>
+    <h2>Borrow Item</h2>
+    <form class="form-container" action="includes/borrowHandler.inc.php" method="post">
+        <label class="form-label" for="name">Teacher Name:</label>
+        <input class="form-input" type="text" placeholder="Full Name" id="name" name="name" required>
 
-            <label for="Itq"><b>Item Quantity:</b></label>
-            <br>
-            <input type="number" id="Itqa" name="quantity" placeholder="0">
-            <br>
-            <label for="Date"><b>Date of Borrow:</b></label>
-            <br>
-            <input type="date" id="DoBr" name="Date">
-            <br>
-            <label for="start"><b>Time of Start:</b></label>
-            <br>
-            <input type="time" id="ToSt" name="start" placeholder="HH:mm">
-            <br>
-            <label for="end"><b>Time of End:</b></label>
-            <br>
-            <input type="time" id="ToE" name="end" placeholder="HH:mm">
-            <br>
-            <div class="dropdown">
-                <label for="status"> Status </label>
-                <select name = "status">
-                    <Option>Done</Option>
-                    <Option>Not Done</Option>
-            </select> 
-            </div>
-            <button> Submit </button>
-        </form>
-    </div>
+        <label class="form-label" for="coursensec">Course and Section:</label>
+        <input class="form-input" type="text" placeholder="Course and Section" id="coursensec" name="coursensec" required>
 
+        <label class="form-label" for="itemborrowed">Item/s to be borrowed:</label>
+        <input class="form-input" type="text" id="itemborrowed" name="itemborrowed" required>
+
+        <label class="form-label" for="itemqty">Quantity:</label>
+        <input class="form-input" type="number" id="itemqty" name="itemqty" placeholder="0" required>
+
+        <label class="form-label" for="dateborrowed">Date Borrowed:</label>
+        <input class="form-input" type="date" id="dateborrowed" name="dateborrowed" required>
+
+        <label class="form-label" for="start">Time of Start:</label>
+        <input class="form-input" type="time" id="start" name="start" required>
+
+        <label class="form-label" for="end">Time of End:</label>
+        <input class="form-input" type="time" id="end" name="end" required>
+
+        <label class="form-label" for="status">Status:</label>
+        <select name="status" required>
+            <option value="Pending">Pending</option>
+        </select>
+
+        <button class="btn-submit" type="submit">Submit</button>
+    </form>
+    <button class="btn-close-popup" onclick="togglePopup()">Close</button>
 
 </body>
 
