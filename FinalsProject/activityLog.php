@@ -2,7 +2,18 @@
      require_once './includes/loginChecker.inc.php'; 
      checkLogin();
 ?>
-    <div>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Log</title>
+    <link rel="stylesheet" href="activityLog.css">
+</head>
+<body>
+
         <div class="actTableContainer">
             <div class="topContainer">
                 <div>
@@ -34,11 +45,18 @@
                 </table>
 
                 <div class="bottomButton">
-                    <a href="returnform.php"> Return Form </a>
-                    <a href="borrowform.php"> Borrow Form </a>
+                    <button class="btn-open-popup" onclick="togglePopup('borrow')">Borrow Form</button>
+                    <button class="btn-open-popup" onclick="togglePopup('return')">Return Form</button>
                 </div>
             </div>
         </div>    
+
+    <div id="popupOverlay" class="overlay-container">
+        <div class="popup-box" id="popupContent"> </div>
     </div>
 
-<?php include_once './includes/footer.php'; ?>
+    <script src="js/borrow.js"></script>
+    <?php include_once './includes/footer.php'; ?>
+
+</body>
+</html>
