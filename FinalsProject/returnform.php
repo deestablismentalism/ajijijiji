@@ -5,21 +5,36 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Return Form</title>
-    </head>
-    <body>
-        <div>
-            <form>
-                <label for="QuanD"><b>Quantity Damaged:</b></label>
-                <label for="QuanR"><b>Quantity Returned:</b></label>
+<head>
+    <title>Return Form</title>
+</head>
+<body>
+    <h2>Return Item</h2>
+    <form class="form-container" action="includes/returnHandler.inc.php" method="post">
+        <label class="form-label" for="name">Teacher Name:</label>
+        <input class="form-input" type="text" placeholder="Full Name" id="name" name="name" required>
 
-                <br>
-                <input type="text" id="QuanD" name="Quantity" placeholder="0">
-                <input type="text" id="QuanR" name="Quantit" placeholder="0">
+        <label class="form-label" for="coursensec">Course and Section:</label>
+        <input class="form-input" type="text" placeholder="Course and Section" id="coursensec" name="coursensec" required>
 
+        <label class="form-label" for="itemreturned">Item/s to be returned:</label>
+        <input class="form-input" type="text" id="itemreturned" name="itemreturned" required>
 
-            </form>
-        </div>
-    </body>
+        <label class="form-label" for="itemqty">Quantity:</label>
+        <input class="form-input" type="number" id="itemqty" name="itemqty" placeholder="0" required>
+
+        <label class="form-label" for="datereturned">Date Returned:</label>
+        <input class="form-input" type="date" id="datereturned" name="datereturned" required>
+
+        <label class="form-label" for="status">Status:</label>
+        <select name="status" required>
+            <option value="Pending">Pending</option>
+            <option value="Replaceable">Replaceable</option>
+            <option value="Returned">Returned</option>
+        </select>
+
+        <button class="btn-submit" type="submit">Submit</button>
+    </form>
+    <button class="btn-close-popup" onclick="togglePopup()">Close</button>
+</body>
 </html>
