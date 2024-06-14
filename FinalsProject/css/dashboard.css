@@ -1,19 +1,21 @@
 /*body image*/
-.photoContainer img {
-    width: 500px;
-    height: 300px;
-}
 .tableContainer {
+    margin: 20px;
     display: grid;
     grid-template-columns: auto auto;
-    margin-left: 20px;
-    color: #2c5398;   
+    border-radius: 10px;
+    color: #2c5398;
+    background-color:#eeeeee77;
+    height: 480px;   
 }
 .tableContainer p {
-    margin-top:10px;
+    margin:10px;
     font-size: 25px;
     text-decoration: underline;
     font-weight: bold;
+}
+.activityTable {
+    margin: 20px;
 }
 .activityTable th {
     border: 2px solid #cfb9b9;
@@ -22,10 +24,20 @@
     font-weight: bold;
     font-size: 20px;
 }
+.recentlyTable {
+    margin: 20px;
+}
 .recentlyTable th {
     border: 2px solid #cfb9b9;
     padding: 5px 20px;
     background-color: #e0e0e0;
     font-weight: bold;
     font-size: 20px;
+}
+
+body{
+    background-image: url('photo/kitchen.jpg');
+    background-size: cover;
+    width: auto;
+    height: 100%;
 }

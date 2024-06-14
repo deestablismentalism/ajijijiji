@@ -7,10 +7,12 @@ session_start();
 
     try {
         $items = getData($pdo);
-
         foreach($items as $item) {
-            echo '<input type="checkbox" id="item'.$item["Item_Id"].'">
-                 <label for="item'.$item["Item_Id"].'">'.htmlspecialchars($item["Category"]).'('.htmlspecialchars($item["Brand"]).')';
+            echo '<li class="allItems"> 
+            <input type="checkbox" class="items" id="'.$item["Item_Id"].'" value="'.$item["Item_Id"].'" name="item">
+            <label class="selectedLabel"for="'.$item["Item_Id"].'">'.htmlspecialchars($item["Category"]).'('.htmlspecialchars($item["Brand"]).')</label>
+            <input type="number" min="1" max="'.$item["ItemQuantity"].'" placeholder ="'.$item["ItemQuantity"].'" name="quantity"> 
+            </li>';
         }
     }
     catch (PDOException $e) {

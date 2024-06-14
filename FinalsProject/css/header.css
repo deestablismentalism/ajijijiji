@@ -7,7 +7,7 @@
 .header {
     display: grid;
     grid-template-columns: 15% 35% 50%;
-    background-color: #F0DE36;
+    background-color: #FDDE55;
     padding-top: 5px;
 }
 a:is(:link, :active, :visited).active {
@@ -27,7 +27,7 @@ a:is(:link, :active, :visited).active {
     font-size: 32px;
     color: white;
     text-align: left;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 1px 2px 1px black;
 }
 .header input {
     background-color: white;
@@ -38,7 +38,7 @@ a:is(:link, :active, :visited).active {
 .hyperLink {
     display: flex;
     padding: 10px;
-    background-color: #F0DE36;
+    background-color: #FDDE55;
     color: white;
     font-size: 20px;
     justify-content: right;
@@ -107,5 +107,4 @@ a:is(:link, :active, :visited).active {
     text-decoration: underline;
 
 }
-
 

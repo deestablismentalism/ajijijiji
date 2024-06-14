@@ -3,9 +3,8 @@ require_once './includes/loginChecker.inc.php';
 checkLogin();
 ?>
 
-            <div class="photoContainer">
-                <img src="css/photo/stiLogo.png">
-            </div>
+<div class ="dashboard"> 
+            
             <div class="tableContainer">
                 <div>
                     <p> Class Information </p><br>
@@ -33,6 +32,7 @@ checkLogin();
                         </thead>                    
                     </table>
                 </div>
-            </div>    
+            </div> 
+</div>   
             
 <?php include_once './includes/footer.php'; ?>   

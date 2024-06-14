@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-require_once 'connection.inc.php';
 require_once 'tableModel.inc.php';
+require_once 'borrowModel.inc.php';
 function displayTable() {
     global $pdo;
     try {
@@ -16,6 +16,8 @@ function displayTable() {
                       <td>' .htmlspecialchars($row["Brand"]). '</td>
                       <td>' .htmlspecialchars((string)$row["ItemQuantity"], ENT_QUOTES, 'UTF-8'). '</td>
                       <td>' .htmlspecialchars($row["DateAdded"]). '</td>
+                      <td>' .htmlspecialchars((string)$row["ItemQuantity"]) .' is available,' .htmlspecialchars((string)$row["BorrowQuantity"]) .
+                      ' is borrowed' .htmlspecialchars((string)$row["DamagedQuantity"]) .' is unusable
                       </tr>';
             }
     }
@@ -50,6 +52,7 @@ function Archive() {
     global $pdo;
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
+        dataArchive($pdo, $id);
         deleteItems($pdo,$id);
         header("Location: ./inventory.php");
         exit();
@@ -60,7 +63,6 @@ function Update() {
 
     if(isset($_GET['edit'])) {
         $edit = $_GET['edit'];
-        
         $result = getData($pdo);
             echo ' <tr class="edited"> <td><a href="inventory.php?edit=save">Save</a>
                     <a href="inventory.php?edit=cancel">Cancel</a></td>

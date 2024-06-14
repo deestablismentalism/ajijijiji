@@ -26,3 +26,18 @@ function deleteItems(object $pdo, $id) {
     $stmt = $pdo->prepare($query);
     $stmt -> execute();
 }
+function dataArchive(object $pdo, $id) {
+    $query = "INSERT INTO archive SELECT * FROM inventory WHERE Item_Id = $id";
+    $stmt = $pdo->prepare($query);
+
+    return $stmt->execute();
+}
+function getArchive(object $pdo) {
+
+    $query = "SELECT * FROM archive";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}

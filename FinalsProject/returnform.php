@@ -9,7 +9,10 @@
     <title>Return Form</title>
 </head>
 <body>
-    <h2>Return Item</h2>
+    <button class="btn-close-popup" onclick="togglePopup()"><i class="fa-solid fa-xmark"></i></button>
+    <div class="returnItemContainer">
+        <h2>Return Item</h2>
+    </div>
     <form class="form-container" action="includes/returnHandler.inc.php" method="post">
         <label class="form-label" for="name">Teacher Name:</label>
         <input class="form-input" type="text" placeholder="Full Name" id="name" name="name" required>
@@ -35,6 +38,5 @@
 
         <button class="btn-submit" type="submit">Submit</button>
     </form>
-    <button class="btn-close-popup" onclick="togglePopup()">Close</button>
 </body>
 </html>

@@ -1,4 +1,6 @@
-<?php session_start() ?>
+<?php session_start();
+    require_once 'includes/history.inc.php';
+    ?>
 <!DOCTYPE html>
 <html>
     <head> 
@@ -36,7 +38,7 @@
                                 <nav>
                                     <?php echo '<p class="username">' .$_SESSION['username']. ' </p>'; ?>
                                     <ul class="dropDownList"> 
-                                        <li class="list"> <a href="#"> History</a> </li>
+                                        <li class="list"> <a href="./history.php"> History</a> </li>
                                         <li class="list"> <a href="#"> Change Login Info </a></li>
                                         <li class="list"> <a href="#"> Requests </li>
                                         <li class="list"> <form action="includes/logout.inc.php">

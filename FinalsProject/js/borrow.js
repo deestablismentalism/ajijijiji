@@ -1,22 +1,6 @@
-function togglePopup(formType) {
-    const overlay = document.getElementById('popupOverlay');
-    overlay.classList.toggle('show');
-
-    if (overlay.classList.contains('show')) {
-        let formURL = '';
-        if (formType === 'borrow') {
-            formURL = 'borrowform.php';
-        } else if (formType === 'return') {
-            formURL = 'returnform.php';
-        }
-
-        // Load the form content via AJAX
-        fetch(formURL)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('popupContent').innerHTML = data;
-            });
-    } else {
-        document.getElementById('popupContent').innerHTML = '';
-    }
+function toggleBorrow() {
+    window.open('./borrowform.php', 'Borrow Form', 'width=500px, height=500px');    
+}
+function toggleReturn() {
+    window.open('./returnform.php', 'Return Form', 'width=500px, height=500px');
 }

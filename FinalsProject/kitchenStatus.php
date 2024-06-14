@@ -23,17 +23,6 @@
                     </tr>
                 </thead>    
                     <tr>
-                        <td> </td>
-                        <td>
-                            <form>
-                                <label for="functional"> Functional </label>
-                                <input type="radio" id="functional" name="status" value="Functional">
-                            
-                                <label for="non-functional"> Non-Functional</label>
-                                <input type="radio" id="non-functional" name="status" value="Non-Functional">
-                                
-                            </form>
-                        </td>
                     </tr>
             </table>
         </div>

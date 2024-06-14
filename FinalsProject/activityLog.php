@@ -45,18 +45,13 @@
                 </table>
 
                 <div class="bottomButton">
-                    <button class="btn-open-popup" onclick="togglePopup('borrow')">Borrow Form</button>
-                    <button class="btn-open-popup" onclick="togglePopup('return')">Return Form</button>
+                    <button class="btn-open-popup" onclick="toggleBorrow()">Borrow Form</button>
+                    <button class="btn-open-popup" onclick="toggleReturn()">Return Form</button>
                 </div>
             </div>
         </div>    
-
-    <div id="popupOverlay" class="overlay-container">
-        <div class="popup-box" id="popupContent"> </div>
-    </div>
-
     <script src="js/borrow.js"></script>
-    <?php include_once './includes/footer.php'; ?>
+<?php include_once './includes/footer.php'; ?>
 
 </body>
 </html>

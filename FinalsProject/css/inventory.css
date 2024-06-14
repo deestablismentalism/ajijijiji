@@ -27,7 +27,7 @@
     padding: 5px 20px;
     border: 1px solid #000;
     border-radius: 5px;
-    background-color: #F0DE36;
+    background-color: #2c5398;
     color: #fff;
     cursor: pointer;
 } 
@@ -74,7 +74,7 @@
     padding: 10px 20px;
     border: 1px solid #000;
     border-radius: 5px;
-    background-color: #F0DE36;
+    background-color: #2c5398;
     color: #fff;
     cursor: pointer;
     margin-top: 10px;
@@ -105,20 +105,18 @@
     font-size: 15px;
 }
 .dltBtn {
-    background-color: #FF1700;
+    background-color: #d6293e;
     border: 1px solid black;
     border-radius: 3px;
     padding: 3px;
     cursor: pointer;
     margin: 2px;
-    display: center;
 }
 .editBtn {
-    background-color: #7DCE13;
+    background-color: #0cbc87;
     border: 1px solid black;
     border-radius: 3px;
     padding: 3px;
     cursor: pointer;
     margin: 2px;
-    display: center;
 }

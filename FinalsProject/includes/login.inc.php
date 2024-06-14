@@ -2,7 +2,7 @@
     session_start();
     
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
-
+        date_default_timezone_set("Asia/Manila");
         $username = $_POST["userName"];
         $password = $_POST["passWord"];
         $dateTime = date('Y-m-d H:i:s');
@@ -35,9 +35,9 @@
             $_SESSION["user_id"] = $result["User_Id"];
             $_SESSION["username"] = $result["UserName"];
             $id = $result["User_Id"];
+            loginHistory($pdo,$id, $dateTime);
             
             header("Location: ../index.php?login=success");
-            loginHistory($id, $dateTime);
             exit();
 
              $pdo = null;

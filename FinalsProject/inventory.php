@@ -67,11 +67,11 @@
                         <th> Brand </th>
                         <th> Quantity </th>
                         <th> Date Added </th>
+                        <th> Status </th>
                     </tr>
                 </thead>
                     <tbody>
                     <?php displayTable()?>
-                    <?php Update() ?>
                     </tbody>
                 </table>
             </div>         
